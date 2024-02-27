@@ -1,17 +1,21 @@
-//
-//  ViewController.swift
-//  reminder_akash
-//
-//  Created by Shruti Makwana on 27/02/24.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var viewNoData: UIView!
+    
+    @IBOutlet weak var viewCreateNewReminder: UIView!
+    
+    @IBAction func btnCreateNewReminder(_ sender: UIButton) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        viewNoData?.layer.cornerRadius = 15
+        viewNoData?.layer.masksToBounds = true
+        viewCreateNewReminder?.layer.cornerRadius = 15
+        viewCreateNewReminder?.layer.masksToBounds = true
     }
 
 
