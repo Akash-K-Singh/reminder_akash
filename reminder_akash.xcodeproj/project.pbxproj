@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		74B3FD032B8DE21F0012DCFB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B3FD022B8DE21F0012DCFB /* TableViewController.swift */; };
 		74B3FD092B8E0C870012DCFB /* InputScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B3FD082B8E0C870012DCFB /* InputScreenViewController.swift */; };
 		74E3CFFD2B8DA66100D0A4D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3CFFC2B8DA66100D0A4D2 /* AppDelegate.swift */; };
 		74E3CFFF2B8DA66100D0A4D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3CFFE2B8DA66100D0A4D2 /* SceneDelegate.swift */; };
@@ -18,6 +17,8 @@
 		74E3D0142B8DA66200D0A4D2 /* reminder_akashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3D0132B8DA66200D0A4D2 /* reminder_akashTests.swift */; };
 		74E3D01E2B8DA66200D0A4D2 /* reminder_akashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3D01D2B8DA66200D0A4D2 /* reminder_akashUITests.swift */; };
 		74E3D0202B8DA66200D0A4D2 /* reminder_akashUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E3D01F2B8DA66200D0A4D2 /* reminder_akashUITestsLaunchTests.swift */; };
+		74EA5F312B8F483D00C89289 /* ReminderDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA5F302B8F483D00C89289 /* ReminderDataManager.swift */; };
+		74EA5F332B8F48A200C89289 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA5F322B8F48A200C89289 /* Reminder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		74B3FD022B8DE21F0012DCFB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		74B3FD082B8E0C870012DCFB /* InputScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputScreenViewController.swift; sourceTree = "<group>"; };
 		74E3CFF92B8DA66100D0A4D2 /* reminder_akash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reminder_akash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E3CFFC2B8DA66100D0A4D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +53,8 @@
 		74E3D0192B8DA66200D0A4D2 /* reminder_akashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reminder_akashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E3D01D2B8DA66200D0A4D2 /* reminder_akashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reminder_akashUITests.swift; sourceTree = "<group>"; };
 		74E3D01F2B8DA66200D0A4D2 /* reminder_akashUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reminder_akashUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		74EA5F302B8F483D00C89289 /* ReminderDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDataManager.swift; sourceTree = "<group>"; };
+		74EA5F322B8F48A200C89289 /* Reminder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +112,9 @@
 				74E3D0052B8DA66200D0A4D2 /* Assets.xcassets */,
 				74E3D0072B8DA66200D0A4D2 /* LaunchScreen.storyboard */,
 				74E3D00A2B8DA66200D0A4D2 /* Info.plist */,
-				74B3FD022B8DE21F0012DCFB /* TableViewController.swift */,
 				74B3FD082B8E0C870012DCFB /* InputScreenViewController.swift */,
+				74EA5F302B8F483D00C89289 /* ReminderDataManager.swift */,
+				74EA5F322B8F48A200C89289 /* Reminder.swift */,
 			);
 			path = reminder_akash;
 			sourceTree = "<group>";
@@ -267,8 +270,9 @@
 				74E3D0012B8DA66100D0A4D2 /* ViewController.swift in Sources */,
 				74E3CFFD2B8DA66100D0A4D2 /* AppDelegate.swift in Sources */,
 				74E3CFFF2B8DA66100D0A4D2 /* SceneDelegate.swift in Sources */,
+				74EA5F332B8F48A200C89289 /* Reminder.swift in Sources */,
 				74B3FD092B8E0C870012DCFB /* InputScreenViewController.swift in Sources */,
-				74B3FD032B8DE21F0012DCFB /* TableViewController.swift in Sources */,
+				74EA5F312B8F483D00C89289 /* ReminderDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
