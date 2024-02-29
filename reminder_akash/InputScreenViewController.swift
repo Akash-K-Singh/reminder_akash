@@ -1,6 +1,8 @@
 import UIKit
 
 class InputScreenViewController: UIViewController, UITextFieldDelegate {
+    
+    var data: Int?
 
     @IBOutlet weak var txtWhere: UITextField!
     
@@ -29,7 +31,11 @@ class InputScreenViewController: UIViewController, UITextFieldDelegate {
         // Create a Reminder object using the input values
         let newReminder = Reminder(title: whereText, dateTime: dateTimePicker.date)
         
-        ReminderManager.shared.reminders.append(newReminder)
+        if(data == -1){
+            ReminderManager.shared.reminders.append(newReminder)
+        } else {
+            ReminderManager.shared.reminders[data!] = newReminder
+        }
         
         if let tableViewController = navigationController?.viewControllers.first as? ViewController {
             tableViewController.tableView.reloadData()
