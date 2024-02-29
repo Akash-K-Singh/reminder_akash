@@ -61,6 +61,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.backgroundColor = UIColor.clear
         cell.contentView.backgroundColor = UIColor.clear
         cell.contentView.viewWithTag(1)?.layer.cornerRadius = 20
+        cell.selectionStyle = .none
         
         // Find the button in the cell using the tag (assuming the tag is set to 10)
         if let button = cell.contentView.viewWithTag(10) as? UIButton {
@@ -73,7 +74,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let reminder = ReminderManager.shared.reminders[indexPath.row]
         if let dateLabel = cell.contentView.viewWithTag(2) as? UILabel {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "MMM dd, yyyy HH:mm" 
+            dateFormatter.dateFormat = "MMM dd, yyyy HH:mm"
             let formattedDate = dateFormatter.string(from: reminder.dateTime)
             dateLabel.text = formattedDate
         }

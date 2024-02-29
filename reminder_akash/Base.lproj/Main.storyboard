@@ -419,6 +419,9 @@
                                                                                             <fontDescription key="titleFontDescription" name="NotoSansOriya" family="Noto Sans Oriya" pointSize="15"/>
                                                                                             <color key="baseForegroundColor" red="0.96186155080000002" green="0.46967965360000002" blue="0.47256767750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                         </buttonConfiguration>
+                                                                                        <connections>
+                                                                                            <action selector="btnCancel:" destination="5ZI-Is-5em" eventType="touchUpInside" id="Of6-iX-wNv"/>
+                                                                                        </connections>
                                                                                     </button>
                                                                                 </subviews>
                                                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>

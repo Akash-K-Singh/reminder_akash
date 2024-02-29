@@ -10,6 +10,11 @@ class InputScreenViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var viewDateTimePicker: UIView!
     
+    
+    @IBAction func btnCancel(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true);
+    }
+    
     @IBAction func btnDone(_ sender: UIButton) {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm" // Specify your desired date format
